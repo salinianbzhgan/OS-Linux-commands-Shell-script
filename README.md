@@ -43,6 +43,7 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![Uploading Screenshot from 2024-02-23 20-56-27.png…]()
 
 
 cat < file2
