@@ -42,23 +42,29 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![Screenshot from 2024-02-26 17-57-58](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1bdb3770-9271-4b8e-b346-b8f8e1a53144)
 
 
 
 cat < file2
 ## OUTPUT
+![Screenshot from 2024-02-26 17-58-14](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/61b310e5-7608-4622-91e5-7b9d0af2261f)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![Screenshot from 2024-02-26 20-30-46](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/260e9a26-daf4-4cb6-9e02-f69e6dfc3083)
+
  
 comm file1 file2
  ## OUTPUT
+![Screenshot from 2024-02-26 20-31-06](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/b09ff117-6980-4d02-b628-a77150e0f4ac)
 
  
 diff file1 file2
 ## OUTPUT
+![Screenshot from 2024-02-26 20-31-22](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/5251f892-9027-44bf-af07-02241eb043ea)
 
 
 #Filters
@@ -83,16 +89,19 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
+![Screenshot from 2024-02-26 18-08-42](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/19019426-9add-4325-a0b0-a67fb8a87bac)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![Screenshot from 2024-02-26 18-08-59](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/db137cbe-e608-4468-97f8-51d2305adeda)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![Screenshot from 2024-02-26 19-01-36](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/b4b07843-e36c-4737-a709-59b8c930390d)
 
 
 cat < newfile 
@@ -108,21 +117,25 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+![Screenshot from 2024-02-26 19-03-33](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1ec96c20-54c5-49fb-8a19-f70b7a71acf1)
 
 
 grep hello newfile 
 ## OUTPUT
 
+![Screenshot from 2024-02-26 19-03-47](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/584edc18-3df2-41e6-8933-9877df6fb419)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 19-13-21](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/85888f5b-2ade-4abe-9113-fde4777fea93)
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![Screenshot from 2024-02-26 20-36-27](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/91205458-5156-440b-9444-0bc108736fe7)
 
 
 
@@ -130,16 +143,21 @@ cat newfile | grep -i "hello"
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
+![Screenshot from 2024-02-26 20-36-41](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/b995cb68-4837-4b90-bbd3-a041251b09ee)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
+![Screenshot from 2024-02-26 19-26-26](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/a182b65c-e490-481d-8651-7805c6016065)
+![Screenshot from 2024-02-26 19-27-14](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/4c07b221-20b2-48dc-af6e-3baf5e8fd6e7)
+
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![Screenshot from 2024-02-26 20-38-38](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/221a8f86-c750-4b38-8803-6ae92561b40d)
 
 
 cat < newfile 
@@ -163,59 +181,72 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-39-31](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/2ce96eb6-2c1d-4130-8177-36c72204d4c8)
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-39-49](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/d9c55353-f693-4c5a-9196-56b1e638c70d)
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
+![Screenshot from 2024-02-26 20-40-32](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/5cc99df9-9ad4-43a4-9030-6b3aad9f7e5f)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-42-55](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/7abead62-7c71-4d41-bd2a-e4d4e7e12ac8)
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-43-27](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/95e9b839-7542-4e53-a507-e6cd0054b6f3)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-43-39](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/ec482880-e249-48e8-ac55-50f1f9c07053)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-44-03](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/a632e0d5-baf2-446b-9cfb-5fc6c51eec69)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-46-28](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/bceddd37-18b7-4bd6-b6b5-0f8904620ae7)
+
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-46-42](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1299dc45-9ad2-4087-ae6f-7561d75d1aeb)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-46-56](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/6f4fbdd6-04e5-448c-bec8-0a7fd2cb3ccf)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![Screenshot from 2024-02-26 20-47-08](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/bec38463-f408-4385-8e8a-d28514175321)
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![Screenshot from 2024-02-26 20-47-22](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/aeea5d6b-b6b1-4175-9b94-a5e1f82776ae)
 
 
 cat > file23
@@ -234,79 +265,88 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
-
-
-sed -n -e '$p' file23
-## OUTPUT
-
+![Screenshot from 2024-02-26 20-48-24](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1b7546dd-596e-4cc4-9aae-53ebc4636eff)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![Screenshot from 2024-02-26 20-48-53](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/169da9aa-3f98-4d1f-b6d5-e6338cc4c3f2)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![Screenshot from 2024-02-26 20-53-11](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/f89ee6d2-5d92-42f4-9ef9-f2bb57050d04)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![Screenshot from 2024-02-26 20-53-44](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/27e67823-b4f9-43fd-a2fc-eb54d0d6c546)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![Screenshot from 2024-02-26 20-53-53](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/db23ef47-5a38-417a-a620-f6d5598a3686)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+![Screenshot from 2024-02-26 20-54-04](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/a93df0ae-cbe4-46c0-ac44-7217227253a9)
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![Screenshot from 2024-02-26 20-54-12](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/645f11b8-3e99-4599-91f0-50a89c2f4e3d)
 
 
 
 seq 10 
 ## OUTPUT
+![Screenshot from 2024-02-26 20-54-26](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/4cb9b75a-ec3c-4216-b7d8-d5a3d67b5d85)
 
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![Screenshot from 2024-02-26 20-54-35](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/7914a12e-b7b1-42f4-923e-b4f715a36f07)
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+![Screenshot from 2024-02-26 20-54-44](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/01c1d38f-0ba7-433d-92bd-60013176a2a0)
 
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+![Screenshot from 2024-02-26 20-54-55](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/bbc211c0-d81e-4aa0-a002-2f8fdf72edc8)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![Screenshot from 2024-02-26 20-55-14](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/2fd7dabb-3a33-402b-b274-e946d898363e)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![Screenshot from 2024-02-26 20-55-56](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/be433db7-2343-4436-b232-10968325170d)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
+![Screenshot from 2024-02-26 20-56-05](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1189b83d-9b54-49cd-9442-64d22a9f2db3)
 
 
 sed -n '2,4{s/$/*/;p}' file23
+![Screenshot from 2024-02-26 20-56-15](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/b71359ac-630a-40d4-a15d-5973024d77e4)
 
 
 #Sorting File content
