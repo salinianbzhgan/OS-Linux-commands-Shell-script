@@ -955,8 +955,6 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-![Screenshot from 2024-02-28 09-38-38](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/81597100-2a81-4ec9-a637-c002ff0683cd)
-
 
 cat fornested1.sh 
 ![Screenshot from 2024-02-28 09-38-51](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/d8a153be-8fd8-4f05-8315-5b0037699557)
