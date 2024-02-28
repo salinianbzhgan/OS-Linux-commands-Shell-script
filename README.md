@@ -346,6 +346,7 @@ sed -n '2,4{s/^/$/;p}' file23
 
 
 sed -n '2,4{s/$/*/;p}' file23
+
 ![Screenshot from 2024-02-26 20-56-15](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/b71359ac-630a-40d4-a15d-5973024d77e4)
 
 
@@ -360,6 +361,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![Screenshot from 2024-02-27 14-21-17](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/08fbcf0e-bb74-4575-a871-ff48681d7c05)
 
 
 cat > file22
@@ -374,12 +376,15 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+![Screenshot from 2024-02-27 14-23-58](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/e8d5c15d-87f1-4b40-9471-8154033e24a5)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![Screenshot from 2024-02-27 14-24-48](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/c541042b-fd64-4627-92bb-404348cb58ca)
+
 
 cat < urllist.txt
 ```
@@ -396,17 +401,22 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+![Screenshot from 2024-02-27 23-16-56](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/ca5ca548-1615-4722-8b10-798b67b3aa44)
 
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![Screenshot from 2024-02-27 23-17-16](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/15f10989-43de-4a57-8cc9-9c392d2da006)
 
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![Screenshot from 2024-02-28 09-14-58](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/259c0abf-768e-48f6-8bae-bafa2ead1d13)
+![Screenshot from 2024-02-28 09-14-46](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1db6ecf0-952a-4458-ac16-13d028e470cc)
+
 
 
 mkdir backupdir
@@ -415,16 +425,19 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![Screenshot from 2024-02-28 09-14-29](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/eb67e3f4-449a-478a-b49f-e148c25fffd6)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![Screenshot from 2024-02-28 09-14-14](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/7c159732-71bd-43bc-b922-3e43f299dbc4)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![Screenshot from 2024-02-28 09-14-01](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/d3cbe499-85e2-4cb3-880c-61d0a465c081)
+
 gunzip backup.tar.gz
 ## OUTPUT
 
@@ -437,9 +450,12 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+![Screenshot from 2024-02-28 09-13-52](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/73ddccad-cc40-4fc8-afcb-b73827fb9067)
 
  
 cat << stop > herecheck.txt
+![Screenshot from 2024-02-28 09-30-57](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/3d50e917-661e-438b-8638-6c5f12438e95)
+
 ```
 hello in this world
 i cant stop
@@ -449,6 +465,8 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+
+![Screenshot from 2024-02-28 09-13-22](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/7ffd0fbf-818d-40f5-884c-6b2886d503f9)
 
 
 cat < scriptest.sh 
@@ -487,23 +505,31 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![Screenshot from 2024-02-28 09-13-01](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/2d050dc9-f837-48a6-b716-8061160a82e2)
 
  
 ls file1
 ## OUTPUT
+![Screenshot from 2024-02-27 23-23-12](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/c3007567-0506-4bfc-a8f0-ad8bf97b56ad)
+
 
 echo $?
 ## OUTPUT 
+![Screenshot from 2024-02-27 23-23-20](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/10c8cf9a-7af7-439b-9db6-134fd9ddbb62)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
-## OUTPUT 
+## OUTPUT:
+![Screenshot from 2024-02-27 23-23-02](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/6aa98a7e-0447-43d9-a5fb-1d12a01ed2dc)
+
  
 abcd
  
 echo $?
- ## OUTPUT
+ ## OUTPUT:
+ 
 
 
  
@@ -543,6 +569,7 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![Screenshot from 2024-02-28 09-12-40](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/18301fcf-f06c-4af5-8b40-4123b798c3fa)
 
 
 # check file ownership
@@ -570,6 +597,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![Screenshot from 2024-02-28 09-12-24](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/20b022a3-f901-402e-b7be-1f84547c95bc)
 
 # check if with file location
 cat>ifnested.sh 
@@ -616,6 +644,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+![Screenshot from 2024-02-28 09-12-13](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/5864b689-5cdf-4e92-8995-a6775f87661a)
 
 
 
@@ -660,6 +689,8 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![Screenshot from 2024-02-28 09-11-58](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/11229923-1c17-49db-925f-63a8bcb36e48)
+
 
 # check if a file
 cat > ifnested.sh 
@@ -708,7 +739,9 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+##OUTPUT:
+
+![Screenshot from 2024-02-28 09-11-45](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1773429f-2148-4daa-bbb1-ed0061121d83)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -737,6 +770,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![Screenshot from 2024-02-28 09-11-34](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/3495aa88-9f7d-49bf-9d02-700e65122127)
 
 
 # testing compound comparisons
@@ -753,6 +787,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![Screenshot from 2024-02-28 09-10-38](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/7115d1bc-4e90-4bda-b6a2-8e230f0c4130)
 
 # using the case command
 cat >casecheck.sh 
@@ -772,6 +807,8 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+![Screenshot from 2024-02-28 09-10-24](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1a93aab7-eb80-4df2-92f7-6eddd666ac9f)
+
  
 cat > whiletest
 ```bash
@@ -787,7 +824,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+
+![Screenshot from 2024-02-28 09-37-14](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1594fbf2-2909-47c5-89fa-a8c8b3b6df03)
+
  
 cat untiltest.sh 
 ```bash
@@ -801,7 +840,8 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+ ![Screenshot from 2024-02-28 09-37-29](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/235623eb-908f-423c-a8fb-ca126f1f7746)
+
  
 cat forin1.sh 
 ```bash
@@ -814,7 +854,8 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+ ![Screenshot from 2024-02-28 09-37-37](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/d57bc488-d233-4493-a9ac-c2aadc308493)
+
  
 cat forin2.sh 
 ```bash
@@ -827,7 +868,8 @@ done
  ```
  
 $ chmod 755 forin2.sh
- 
+ ![Screenshot from 2024-02-28 09-37-47](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/4747251a-417b-4982-8c97-f554621fe0c7)
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -840,7 +882,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+ ![Screenshot from 2024-02-28 09-37-56](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/a22a7562-a237-4831-8556-153ae63aed57)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -914,6 +957,8 @@ $ ./forctype1.sh
 ## OUTPUT
 
 cat fornested1.sh 
+![Screenshot from 2024-02-28 09-38-51](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/d8a153be-8fd8-4f05-8315-5b0037699557)
+
 ```bash
 #!/bin/bash
 # nesting for loops
@@ -930,6 +975,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+![Screenshot from 2024-02-28 09-39-03](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/970d1006-c533-47f3-a6f1-71cc1c20b4d1)
 
  
 cat forbreak.sh 
@@ -951,7 +997,8 @@ echo "The for loop is completed“
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
+ ![Screenshot from 2024-02-28 09-39-03](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/076b54cb-b88a-440e-807a-6d5a6f8fec73)
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -985,7 +1032,8 @@ echo "Hello $name, welcome to my program. "
 $ chmod 755 exread.sh 
  
 $ ./exread.sh 
-## OUTPUT
+## OUTPUT:
+![Screenshot from 2024-02-28 09-06-47](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/42720262-e968-4e49-b1b5-731183ee6c5a)
 
 
  cat exread1.sh
@@ -997,11 +1045,11 @@ echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
 
-## OUTPUT
-
-
+## OUTPUT:
 
 $ ./exread1.sh 
+![Screenshot from 2024-02-28 09-06-47](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/ba27bdc2-c842-49b2-a944-2ebfd688ab03)
+
  
 cat funcex.sh
 ```bash
@@ -1020,9 +1068,8 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
- 
  ./funcex.sh 1 2
+![Screenshot from 2024-02-28 09-02-11](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/4d03f839-cad6-4474-b50b-74f1d748b855)
 
  
 cat argshift.sh
@@ -1037,6 +1084,8 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+![Screenshot from 2024-02-28 08-59-41](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/a1aed1f3-7820-49b1-bd8e-3bb0f6da42f6)
+
  
  cat argshift1.sh
 ```bash
@@ -1054,6 +1103,9 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+
+![Screenshot from 2024-02-28 08-59-41](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/6d906edf-8d90-468d-9f93-017f6aa03345)
+
  
 cat argshift.sh
 ```bash
@@ -1068,6 +1120,8 @@ set +x
 ## OUTPUT
  ./argshift.sh 1 2 3
  
+ ![Screenshot from 2024-02-28 08-53-50](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/1151be21-f597-4a26-a6b8-96430f2bfefa)
+
  
 cat > nc.awk
 ```bash
@@ -1097,8 +1151,11 @@ bcdfghj
 ubcdfghj
 ```
 awk -f nc.awk data.dat
-## OUTPUT 
- 
+## OUTPUT :
+
+ ![Screenshot from 2024-02-28 08-46-56](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/6f668782-9f0b-43b1-af8e-68479a42f589)
+
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1125,6 +1182,7 @@ else
 fi
 ```
 ## OUTPUT 
+![Screenshot from 2024-02-28 08-44-48](https://github.com/salinianbzhgan/OS-Linux-commands-Shell-script/assets/145742862/79087e99-2129-4241-9a1c-409685cef2b0)
 
 
 # RESULT:
